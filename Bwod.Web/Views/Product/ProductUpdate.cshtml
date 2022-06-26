@@ -1,0 +1,64 @@
+﻿@model Bwod.Web.Models.ProductViewModel
+
+<form asp-action="ProductUpdate">
+    <input asp-for="id" hidden />
+    <br />
+    <div class="container border p-3">
+        <h1 class="text-primary">Atualizar Produto</h1>
+        <hr />
+        <div class="row">
+            <div asp-validation-summary="ModelOnly" class="text-danger">
+            </div>
+            <div class="col-2">
+                <label asp-for="name" class="control-label pt-2" style="font-size:20px;">Nome</label>
+            </div>
+            <div class="col-10 pb-3">
+                <input asp-for="name" class="form-control" />
+                <span asp-validation-for="name" class="text-danger"></span>
+            </div>
+
+            <div class="col-2">
+                <label asp-for="price" class="control-label pt-2" style="font-size:20px;">Preço</label>
+            </div>
+            <div class="col-10 pb-3">
+                <input asp-for="price" class="form-control" />
+                <span asp-validation-for="price" class="text-danger"></span>
+            </div>
+
+            <div class="col-2">
+                <label asp-for="description" class="control-label pt-2" style="font-size:20px;">Descrição</label>
+            </div>
+            <div class="col-10 pb-3">
+                <textarea asp-for="description" class="form-control"></textarea>
+                <span asp-validation-for="description" class="text-danger"></span>
+            </div>
+
+            <div class="col-2">
+                <label asp-for="category_name" class="control-label pt-2" style="font-size:20px;">Categoria</label>
+            </div>
+            <div class="col-10 pb-3">
+                <input asp-for="category_name" class="form-control" />
+                <span asp-validation-for="category_name" class="text-danger"></span>
+            </div>
+
+            <div class="col-2">
+                <label asp-for="image_url" class="control-label pt-2" style="font-size:20px;">URL da Imagem</label>
+            </div>
+            <div class="col-10 pb-3">
+                <input asp-for="image_url" class="form-control" />
+                <span asp-validation-for="image_url" class="text-danger"></span>
+            </div>
+
+            <div class="col-5 offset-2">
+                <a asp-action="ProductIndex" class="btn-primary btn form-control">Voltar a Lista</a>
+            </div>
+            <div class="col-5">
+                <input type="submit" value="Atualizar" class="btn btn-success form-control" />
+            </div>
+        </div>
+    </div>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    }

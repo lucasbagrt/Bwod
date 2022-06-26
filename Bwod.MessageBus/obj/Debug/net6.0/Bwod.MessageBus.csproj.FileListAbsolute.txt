@@ -1,0 +1,12 @@
+C:\Users\Lucas\source\repos\Bwod\Bwod.MessageBus\bin\Debug\net6.0\Bwod.MessageBus.deps.json
+C:\Users\Lucas\source\repos\Bwod\Bwod.MessageBus\bin\Debug\net6.0\Bwod.MessageBus.dll
+C:\Users\Lucas\source\repos\Bwod\Bwod.MessageBus\bin\Debug\net6.0\Bwod.MessageBus.pdb
+C:\Users\Lucas\source\repos\Bwod\Bwod.MessageBus\obj\Debug\net6.0\Bwod.MessageBus.csproj.AssemblyReference.cache
+C:\Users\Lucas\source\repos\Bwod\Bwod.MessageBus\obj\Debug\net6.0\Bwod.MessageBus.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lucas\source\repos\Bwod\Bwod.MessageBus\obj\Debug\net6.0\Bwod.MessageBus.AssemblyInfoInputs.cache
+C:\Users\Lucas\source\repos\Bwod\Bwod.MessageBus\obj\Debug\net6.0\Bwod.MessageBus.AssemblyInfo.cs
+C:\Users\Lucas\source\repos\Bwod\Bwod.MessageBus\obj\Debug\net6.0\Bwod.MessageBus.csproj.CoreCompileInputs.cache
+C:\Users\Lucas\source\repos\Bwod\Bwod.MessageBus\obj\Debug\net6.0\Bwod.MessageBus.dll
+C:\Users\Lucas\source\repos\Bwod\Bwod.MessageBus\obj\Debug\net6.0\refint\Bwod.MessageBus.dll
+C:\Users\Lucas\source\repos\Bwod\Bwod.MessageBus\obj\Debug\net6.0\Bwod.MessageBus.pdb
+C:\Users\Lucas\source\repos\Bwod\Bwod.MessageBus\obj\Debug\net6.0\ref\Bwod.MessageBus.dll

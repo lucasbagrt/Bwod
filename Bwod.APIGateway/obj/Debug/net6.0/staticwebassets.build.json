@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "C3jHQl3l6yH+tWH3FdsdVYgX4Lq65T+Fi550EBP98ls=",
+  "Source": "Bwod.APIGateway",
+  "BasePath": "_content/Bwod.APIGateway",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

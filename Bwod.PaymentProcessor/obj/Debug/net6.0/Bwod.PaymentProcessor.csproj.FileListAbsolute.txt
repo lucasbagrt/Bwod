@@ -1,0 +1,12 @@
+C:\Users\Lucas\source\repos\Bwod\Bwod.PaymentProcessor\bin\Debug\net6.0\Bwod.PaymentProcessor.deps.json
+C:\Users\Lucas\source\repos\Bwod\Bwod.PaymentProcessor\bin\Debug\net6.0\Bwod.PaymentProcessor.dll
+C:\Users\Lucas\source\repos\Bwod\Bwod.PaymentProcessor\bin\Debug\net6.0\Bwod.PaymentProcessor.pdb
+C:\Users\Lucas\source\repos\Bwod\Bwod.PaymentProcessor\obj\Debug\net6.0\Bwod.PaymentProcessor.csproj.AssemblyReference.cache
+C:\Users\Lucas\source\repos\Bwod\Bwod.PaymentProcessor\obj\Debug\net6.0\Bwod.PaymentProcessor.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lucas\source\repos\Bwod\Bwod.PaymentProcessor\obj\Debug\net6.0\Bwod.PaymentProcessor.AssemblyInfoInputs.cache
+C:\Users\Lucas\source\repos\Bwod\Bwod.PaymentProcessor\obj\Debug\net6.0\Bwod.PaymentProcessor.AssemblyInfo.cs
+C:\Users\Lucas\source\repos\Bwod\Bwod.PaymentProcessor\obj\Debug\net6.0\Bwod.PaymentProcessor.csproj.CoreCompileInputs.cache
+C:\Users\Lucas\source\repos\Bwod\Bwod.PaymentProcessor\obj\Debug\net6.0\Bwod.PaymentProcessor.dll
+C:\Users\Lucas\source\repos\Bwod\Bwod.PaymentProcessor\obj\Debug\net6.0\refint\Bwod.PaymentProcessor.dll
+C:\Users\Lucas\source\repos\Bwod\Bwod.PaymentProcessor\obj\Debug\net6.0\Bwod.PaymentProcessor.pdb
+C:\Users\Lucas\source\repos\Bwod\Bwod.PaymentProcessor\obj\Debug\net6.0\ref\Bwod.PaymentProcessor.dll

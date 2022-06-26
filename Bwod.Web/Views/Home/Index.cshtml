@@ -1,0 +1,28 @@
+﻿@model IEnumerable<Bwod.Web.Models.ProductViewModel>
+<form>
+    <div class="container row">
+        @foreach (var product in Model)
+        {
+            <div class="col-lg-4">
+                <div class="p-0 my-3 border">
+                    <div class="card">
+                        <img class="card-img-top" style="min-height: 259px;" src="@product.image_url" alt="@product.name">
+                        <div class="card-body">
+                            <h5 class="card-title text-success">@product.SubstringName()</h5>
+                            <span class="badge badge-light mb-2">@product.category_name</span>
+                            <p class="card-text">@Html.Raw(@product.SubstringDescription())</p>
+                            <div class="row">
+                                <div class="col-pt-1">
+                                    <span style="font-size: 23px">@product.price.ToString("C")</span>
+                                </div>
+                                <div class="col">
+                                    <a asp-action="Details" asp-route-id="@product.id" class="btn btn-success form-control">Detalhes</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</form>
