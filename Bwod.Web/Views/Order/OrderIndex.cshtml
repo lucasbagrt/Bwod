@@ -1,0 +1,91 @@
+﻿@model IEnumerable<Bwod.Web.Models.OrderViewModel>
+
+<br />
+<br />
+<div class="container p-4 border">
+    <div class="row pb-2">
+        <div class="col">
+            <h1 class="text-primary">Lista de Vendas</h1>
+        </div>
+    </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th style="width: 25%">Cliente</th>
+                <th style="width: 25%">Data / Status</th>
+                <th style="width: 25%">Detalhes</th>
+                <th style="width: 25%">Preço</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        <div>
+                            <span style="font-weight: bold">Nome:</span> @item.order_header.first_name @item.order_header.last_name
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <span style="font-weight: bold">Data:</span> @item.order_header.date_time.ToString("dd/MM/yyyy")
+                        </div>
+                        <div>
+                            @if (@item.order_header.payment_status)
+                            {
+                                <span style="font-weight: bold">Status: </span>
+
+                                <label class="text-success">Pago</label>
+                            }
+                            @if (!@item.order_header.payment_status)
+                            {
+                                <span style="font-weight: bold">Status: </span>
+
+                                <label class="text-primary">Pendente</label>
+                            }
+                        </div>
+                    </td>
+                    <td>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th style="width: 50%">Produto</th>
+                                    <th style="width: 50%">Preço</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var it in item.order_details)
+                                {
+                                    <tr>
+                                        <td>
+                                            <div>
+                                                <label>@it.count x @it.product_name</label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div>
+                                                <label>@it.price.ToString("C")</label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </td>
+                    <td>
+                        <div>
+                            <span style="font-weight: bold">Total:</span> @item.order_header.purchase_amount.ToString("C")
+                        </div>
+                        @if (@Convert.ToDecimal(@item.order_details.Sum(t => t.price * t.count) - @item.order_header.purchase_amount) > 0)
+                        {
+                            <div>
+                                <span style="font-weight: bold">Desconto: </span>@Convert.ToDecimal(
+                                    @item.order_details.Sum(t => t.price * t.count) - @item.order_header.purchase_amount).ToString("C")
+                            </div>
+                        }
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

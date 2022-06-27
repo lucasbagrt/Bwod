@@ -44,3 +44,5 @@ C:\Users\Lucas\source\repos\Bwod\Bwod.OrderAPI\obj\Debug\net6.0\refint\Bwod.Orde
 C:\Users\Lucas\source\repos\Bwod\Bwod.OrderAPI\obj\Debug\net6.0\Bwod.OrderAPI.pdb
 C:\Users\Lucas\source\repos\Bwod\Bwod.OrderAPI\obj\Debug\net6.0\Bwod.OrderAPI.genruntimeconfig.cache
 C:\Users\Lucas\source\repos\Bwod\Bwod.OrderAPI\obj\Debug\net6.0\ref\Bwod.OrderAPI.dll
+C:\Users\Lucas\source\repos\Bwod\Bwod.OrderAPI\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\Lucas\source\repos\Bwod\Bwod.OrderAPI\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

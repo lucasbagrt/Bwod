@@ -24,19 +24,19 @@ namespace Bwod.ProductAPI.Repository
         }
         public async Task<ProductVO> FindById(int id)
         {
-            Product? product = await _context!.Products!.Where(t => t.id == id).FirstOrDefaultAsync();
+            Product product = await _context!.Products!.Where(t => t.id == id).FirstOrDefaultAsync();
             return _mapper!.Map<ProductVO>(product);
         }
         public async Task<ProductVO> Create(ProductVO vo)
         {
-            Product? product = _mapper!.Map<Product>(vo);
+            Product product = _mapper!.Map<Product>(vo);
             _context!.Products!.Add(product);
             await _context.SaveChangesAsync();
             return _mapper!.Map<ProductVO>(product);
         }
         public async Task<ProductVO> Update(ProductVO vo)
         {
-            Product? product = _mapper!.Map<Product>(vo);
+            Product product = _mapper!.Map<Product>(vo);
             _context!.Products!.Update(product);
             await _context.SaveChangesAsync();
             return _mapper!.Map<ProductVO>(product);
@@ -45,7 +45,7 @@ namespace Bwod.ProductAPI.Repository
         {
             try
             {
-                Product? product = await _context!.Products!.Where(t => t.id == id).FirstOrDefaultAsync();
+                Product product = await _context!.Products!.Where(t => t.id == id).FirstOrDefaultAsync();
                 if (product == null) return false;
                 _context!.Products!.Remove(product);
                 await _context!.SaveChangesAsync();

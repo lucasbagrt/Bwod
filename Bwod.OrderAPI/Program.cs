@@ -5,6 +5,9 @@ using Bwod.OrderAPI.RabbitMQSender;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using AutoMapper;
+using Bwod.OrderAPI.Config;
+using Bwod.OrderAPI.Repository.IRepository;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -24,10 +27,13 @@ services.AddDbContext<MySQLContext>(options =>
 var bld = new DbContextOptionsBuilder<MySQLContext>();
 bld.UseMySql(connection, new MySqlServerVersion(new Version(8, 0, 29)));
 
+IMapper mapper = MappingConfig.RegisterMaps().CreateMapper();
+services.AddSingleton(mapper);
+services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 services.AddHostedService<RabbitMQCheckoutConsumer>(); 
 services.AddSingleton<IRabbitMQMessageSender, RabbitMQMessageSender>();
 services.AddSingleton(new OrderRepository(bld.Options));
-
+services.AddScoped<IOrderRepository, OrderRepository>();
 services.AddControllers();
 services.AddAuthentication("Bearer")
     .AddJwtBearer("Bearer", options =>
@@ -88,6 +94,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseRouting();
+app.MapControllers();
 app.UseAuthentication();
 app.UseAuthorization();
 app.Run();

@@ -20,6 +20,10 @@ services.AddHttpClient<ICouponService, CouponService>
     (
        t => t.BaseAddress = new Uri(builder.Configuration["ServiceUrls:CouponAPI"])
     );
+services.AddHttpClient<IOrderService, OrderService>
+    (
+       t => t.BaseAddress = new Uri(builder.Configuration["ServiceUrls:OrderAPI"])
+    );
 
 services.AddServerSideBlazor();
 services.AddRazorPages();
